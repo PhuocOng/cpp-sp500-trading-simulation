@@ -5,10 +5,10 @@
 using namespace std;
 
 struct PortfolioEntry {
-    std::string buyDate;
+    string buyDate;
     double amountInvested;
     double sp500BuyValue;
 };
 
-PortfolioEntry invest_in_sp500(const std::string& date, double amount, const std::vector<SP500Entry>& data);
-double calculate_current_value(const PortfolioEntry& entry, const std::vector<SP500Entry>& data);
+PortfolioEntry invest_in_sp500(const string& date, double amount, const vector<SP500Entry>& data);
+double calculate_current_value(const PortfolioEntry& entry, const vector<SP500Entry>& data);
