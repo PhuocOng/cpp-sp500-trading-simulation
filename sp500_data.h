@@ -5,7 +5,7 @@
 using namespace std;
 
 struct SP500Entry {
-    string date;  // e.g., "2023-01-01"
+    string date;  // e.g., "01/30/2024"
     double close;      // e.g., 3900.12
 };
 

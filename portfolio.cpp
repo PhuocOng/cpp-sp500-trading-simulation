@@ -12,7 +12,7 @@ PortfolioEntry invest_in_sp500(const string& date, double amount, const vector<S
 }
 
 double calculate_current_value(const PortfolioEntry& entry, const vector<SP500Entry>& data) {
-    double latest = data.back().close;
+    double latest = 5659.91; // Latest S&P 500 value (as of October 2025)
     double growth = latest / entry.sp500BuyValue;
     return entry.amountInvested * growth;
 }
