@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall
-OBJS = main.o sp500_data.o portfolio.o auth.o
+OBJS = main.o sp500_data.o portfolio.o auth.o data_cleaner.o
 
 all: tracker
 
