@@ -7,4 +7,5 @@ using namespace std;
 bool sign_in();
 void sign_up();
 bool authenticate(const string& user, const string& pass); //&pass by value and pass by reference
-
+std::string sha256(const std::string& input);
+std::string generate_salt(size_t length = 16);
