@@ -5,7 +5,7 @@ OBJS = main.o sp500_data.o portfolio.o auth.o
 all: tracker
 
 tracker: $(OBJS)
-	$(CXX) $(CXXFLAGS) -o tracker $(OBJS)
+	$(CXX) $(CXXFLAGS) -o tracker $(OBJS) -lssl -lcrypto
 
 main.o: main.cpp auth.h
 	$(CXX) $(CXXFLAGS) -c main.cpp
